@@ -1,0 +1,25 @@
+name: Manual Greeting
+
+on:
+  workflow_dispatch:
+    inputs:
+      student_name:
+        description: Name des Studenten
+        required: true
+        default: "Mina"
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository herunterladen
+        uses: actions/checkout@v4
+
+      - name: Skript ausführbar machen
+        run: chmod +x scripts/01_manual_greeting.sh
+
+      - name: Begrüßung starten
+        run: bash scripts/01_manual_greeting.sh
+        env:
+          STUDENT_NAME: ${{ github.event.inputs.student_name }}
