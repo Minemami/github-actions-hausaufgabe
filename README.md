@@ -11,3 +11,4 @@ Aufgabe der Teilnehmenden:
 Hinweis:
 Der Ordner MUSTERLOESUNG_workflows enthaelt fertige Beispiel Workflows fuer die Lehrkraft.
 Wenn die Teilnehmenden die Workflows selbst schreiben sollen, kann dieser Ordner vor der Ausgabe geloescht werden.
+.
